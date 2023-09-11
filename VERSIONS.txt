@@ -1,0 +1,49 @@
+VERSIONS "Parser Actes TTM ####.ipynb"
+
+- Notebook v. 1.3: Versió de proves del nou parsing d'actes mitjançant
+                fitxers MSG.
+- Notebook v. 1.3.01: Versió plenament operativa amb les mateixes
+                funcionalitats que la versió Script v.2.0.02.
+- Notebook v. 1.3.03: Versió plenament operativa amb les mateixes
+                funcionalitats que la versió Script v.2.0.03.
+- Notebook v. 1.3.04: Versió plenament operativa amb les mateixes
+                funcionalitats que la versió Script v.2.0.04.
+- Notebook v. 1.3.05: Versió plenament operativa amb les mateixes
+                funcionalitats que la versió Script v.2.0.05.
+- Notebook v. 1.3.06: Versió plenament operativa amb les mateixes
+                funcionalitats que la versió Script v.2.0.06.
+
+
+VERSIONS "Parsing_Emails_v_####.zip"
+
+- Script v. 2.0.01: Versió inicial del script.
+- Script v. 2.0.02: S'incorpora la ordenació automàtica de files
+                en funció de les columnes 'Data de la reunió' i
+                'Ref. Tema i Reunió' mitjançant la funció sort_values()
+                de pandas en la funció principal utils.manipulacio. També
+		s'hi implementa un multiprocess en la funció 
+		utils.desplegament per llegir els fitxers MSG i que resulta
+		en una millora del 25% en el seu temps d'execució en 
+		comparació a la execució seqüencial.
+- Script v. 2.0.03: S'incorpora nova subfunció que realitzar la separació
+		entre potencials paraules d'acord al model "minuscúlaMajúscula".
+- Script v. 2.0.04: S'afegeixen noves funcionalitats a la subfunció
+		separador_paraules() amb nous patrons addicionals.
+- Script v. 2.0.05: S'hi afegeixen tres noves tasques:
+		1. S'afegeix la correcció d'errors ortotipogràfics més freqüents.
+		2. Una nova subfunció que separa paraules potencials entre sí
+		com també dels signes de puntuació.
+		3. Generació d'un fitxer Pickle (.pkl) del DataFrame ja netejat
+		com output, a més de missatges informatius indicant el nom i
+		ubicació respectives de tant del fitxer Pickle com l'Excel.
+- Script v. 2.0.06: S'hi introdueixen dues novetats:
+		1. Control de les excepcions originades per la comprovació en la
+		funció principal desplegament() si el nombre total d'Ordres del
+		dia i Actes és parell (2 per reunió). En el cas que sigui imparell,
+		ja sigui per que hi manca un fitxer o bé per duplicació, el robot
+		esborrarà els fitxers MSG descomprimits, mostrarà per pantalla un
+		missatge d'error específic i finalitzarà la execució del script.
+		2. Es modifica la escriptura del timestamps en el fitxers, sent ara
+		AAAAMMDD, a diferència de l'anterior AAAA-MM-DD.
+
+
