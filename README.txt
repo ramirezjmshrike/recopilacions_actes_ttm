@@ -29,6 +29,11 @@ També es duu a terme el desplegament del sistema de carpetes:
 	- data
 	- reports
 
+En el cas que es volgués només descomprimir el fitxer Parsing_Emails_v_2_X_XX.zip
+serà necessari crear manualment les carpetes:
+	- data/
+	- data/data_processat
+	- reports/
 
 ### Com executar aquest programa
 
@@ -77,5 +82,6 @@ ja existís aquesta carpeta. També cal tenir present que pot fer augmentar una 
 el temps d'execució del programa.
 
 ### Testing
-
+Tot i que el programa sí sha testejat durant el procès de disseny, encara representació
+pendent d'escriure el codi que realitzi aquestes tasques juntament amb el mòdul unittest.
 
