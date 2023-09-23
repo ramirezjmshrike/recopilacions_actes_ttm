@@ -69,7 +69,8 @@ Web services) amb quatre CPU i disposant de recursos segons la demanda i disponi
 d'aquests per PAW per realitzar el joc de proves.
 
 També cal tenir present que durant la execució d'aquest programa es genera un arxiu .pkl
-amb una imatge del dataframe final que s'exporta en format XLSX:
+amb una imatge del dataframe final que s'exporta en format XLSX. Aquest fitxer PKL es pot
+trobar en:
 	- data/data_processat
 
 En el cas que es volgués desviar la sortida per pantalla cap a un arxiu de text pla
